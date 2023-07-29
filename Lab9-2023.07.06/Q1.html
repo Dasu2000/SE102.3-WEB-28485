@@ -1,0 +1,164 @@
+<html>
+	<head>
+	
+		<style>
+			
+			
+			table
+			{
+            margin-top: 100px;
+			height:100px;
+			width:400px;
+			color:yellow;
+			background-color:black;
+			}
+			
+			tr
+			{
+				height:40px;
+			}
+            
+           
+			
+		
+		</style>
+	
+		<script>
+            function x()
+            {
+		
+		 if (document.log.fn.value=="" )
+                    {
+                        alert("Input is Empty...");
+                    }
+         if (document.log.ln.value=="")
+                    {
+                        alert("Input is Empty...");
+                    }
+        if (document.log.date.value=="")
+                    {
+                        alert("Input is Empty...");
+                    }
+		 if((!document.log.gn[0].checked)&&(!document.log.gn[1].checked))
+                    {
+                        alert("Select Gender....");
+                    }
+        if (document.log.em.value=="")
+                    {
+                        alert("Input is Empty...");
+                    }
+        if (document.log.em.value=!"@")
+                    {
+                        alert("Email must have @...");
+                    }
+        if (document.log.pn.value=="")
+                    {
+                        alert("Input is Empty...");
+                    }
+        if (document.log.p1.value=="")
+                    {
+                        alert("Input is Empty...");
+                    }
+        if (document.log.p2.value=="")
+                    {
+                        alert("Input is Empty...");
+                        
+                    }
+                
+         if(document.log.p1.value != document.log.p2.value)
+                    {
+                        alert("Passwords not matching....")
+                    }
+        
+                
+        if(document.log.pn.value.length<10)
+                    {
+                        alert("Password must more than 8 characters.....")
+                    }
+                
+       
+            }
+            
+            
+            
+		</script>
+	</head>
+	<body>
+	<center>
+	<table >
+	
+		<form name="log">
+			<tr>
+				<td colspan="2" style="background-color:FFA500;">Sign Up</td>
+				
+			</tr>
+			
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="fn" placeholder="Enter First Name">
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="ln" placeholder="Enter Last Name">
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><input type="date" name="date" placeholder="date">
+			</tr>
+		   <tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gn" >Male
+				<input type="radio" name="gn" >Female</td>
+			</tr>
+			
+			<tr>
+				<td>Country</td>
+				<td>
+				<select>
+					<option>country</option>
+					<option>Sri Lanka</option>
+					<option>India</option>
+				</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="em" placeholder="Enter Email">
+			</tr>
+			
+            
+            
+            
+			<tr>
+				<td>Phone:</td>
+				<td><input type="text" name="pn" placeholder="Enter phone number">
+			</tr>
+			
+			<tr>
+				<td>Password:</td>
+				<td><input type="Password" name="p1" placeholder="Enter Password">
+			</tr>
+			<tr>
+				<td>Confirm Password:</td>
+				<td><input type="Password" name="p2" placeholder="Re enter password">
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="checkbox" name="c1">I Agree to the Terms of use</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="2" style="background-color:FFA500;">
+				<input type="Button" name="sb" style="background-color:green; width:70px; height:30px;" value="click" onClick="x()">
+				<input type="reset" name="rs" style="background-color:red; width:70px; height:30px;">
+				</td>
+				
+			</tr>
+		
+		</form>
+	</table>
+</center>
+	</body>
+</html>	
